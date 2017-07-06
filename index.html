@@ -1,0 +1,256 @@
+<html>
+  <head>
+    <title>GENESIS</title>
+    <link rel="stylesheet" href="http://repo.zectr.com/Releases/Websites/M8/m8.css" />
+    <link rel="stylesheet" href="assets/css/main-font.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fonts.css" type="text/css" charset="utf-8" />
+    <style>
+      .font-logo {
+        font-family: 'Futura Md BT';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 100px;
+      }
+      .font-headers {
+        font-family: 'Futura Md BT';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 62px;
+      }
+      .font-nav {
+        font-family: 'Futura Md BT';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 36px;
+        color: #00c8f8;
+
+      }
+      .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      @media (max-width: 600px) {
+        .bgimg-1 {
+            background-image: url('assets/img/Pattern_BG.jpg');
+            min-height: 100%;
+        }
+      }
+      .bgimg-1 {
+          background-image: url('assets/img/big.png');
+          min-height: 100%;
+      }
+      .bgimg-2 {
+          background-image: url('assets/img/BG_med.jpg');
+          min-height: 100%;
+      }
+      .bgimg-3 {
+          background-image: url('assets/img/Pattern_BG.png');
+          min-height: 80%;
+      }
+      .bgimg-4 {
+          background-image: url('assets/img/Pattern_BG.png');
+          min-height: 5%;
+      }
+    </style>
+  </head>
+  <!--
+  COLORS:
+
+  #fffff(white has been used a lot for the title) .
+  #465320 - SLUDGE GREEN
+  #00c8f8 - NEON BLUE
+  #d02424 - DARK RED
+  #233633 - DARK GREY/GREEN
+  #242e19 - SHIT COLOR GREEN
+  #323330 - DUSK GREY
+  -->
+  <body style="background-color: #323330;">
+    <!-- BEGINNING OF PARALLAX LOGO -->
+    <div class="m8-display-container" id="home">
+      <div id="navDemo" class="m8-bar-block m8-white m8-hide m8-hide-large">
+        <a href="#about" class="m8-bar-item m8-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="m8-bar-item m8-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#contact" class="m8-bar-item m8-button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#" class="m8-bar-item m8-button">SEARCH</a>
+      </div>
+      <!-- END OF MOBILE MENU -->
+      <!--BEGGING OF LARGE SCREEN -->
+      <div class="bgimg-1 m8-hide-small">
+        <div class="m8-content m8-container" style="margin-top: -40px; margin-bottom: -20px;">
+          <h1 class="m8-center m8-text-white font-logo">GENESIS</h1>
+        </div>
+        <!--NAVBAR-->
+        <div class="m8-container">
+          <div class="m8-cell-row">
+            <div class="m8-cell m8-center">
+              <span class="font-nav m8-hover-opacity">ABOUT</span>
+            </div>
+            <div class="m8-cell m8-center">
+              <span class="font-nav m8-hover-opacity">ARCHIVE</span>
+            </div>
+            <div class="m8-cell m8-center">
+              <span class="font-nav m8-hover-opacity">CHARACTERS</span>
+            </div>
+            <div class="m8-cell m8-center">
+              <span class="font-nav m8-hover-opacity">FAQ</span>
+            </div>
+            <div class="m8-cell m8-center">
+              <span class="font-nav m8-hover-opacity">CONTACT</span>
+            </div>
+          </div>
+        </div>
+        <div class="m8-content m8-margin-top m8-center m8-white" style="width: 40%; border-radius: 10px;">
+          <span class="m8-center m8-display-center m8-xxlarge font-headers">UPDATES</span>
+          <hr />
+          <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
+        </div>
+
+        <div class="m8-content m8-margin-top m8-center m8-white" style="width: 40%; border-radius: 10px;">
+          <span class="m8-center m8-display-center m8-xxlarge font-headers">LATEST PAGE</span>
+          <hr />
+          <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
+        </div>
+      </div>
+
+<!--PHONE SIZE STARTS HERE...-->
+      <div class="bgimg-3 m8-hide-large m8-hide-medium m8-display-container">
+        <div class="m8-content m8-container" style="margin-top: -40px; margin-bottom: -20px;">
+          <div class="m8-cell-row ">
+            <div class="m8-cell m8-display-topleft">
+              <h1 class="m8-left m8-text-white font-logo">GENESIS</h1>
+            </div>
+            <div class="m8-cell m8-display-topright">
+              <span class="m8-hover-opacity m8-xxxlarge  m8-display-right" style="margin-top: 90px; margin-right: 20px; color: white;" onclick="toggleFunction()"><a><i class="fa fa-bars"></i></a></span>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div><!-- BEGINNING OF MOBILE MENU -->
+
+    <!--BEGGING OF CONTENT AFTER Parallax-->
+    <div class="m8-hide-large m8-hide-medium">
+      <div class="m8-content m8-container m8-white">
+        <div class="m8-container m8-center">
+          <h1 class="font-headers">UPDATES</h1>
+          <hr />
+          <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
+        </div>
+      </div>
+      <div class="bgimg-4"></div>
+      <div class="m8-content m8-container m8-white">
+        <div class="m8-container m8-center">
+          <h1 class="font-headers">LATEST PAGE</h1>
+          <hr />
+          <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
+        </div>
+      </div>
+    </div>
+
+    <!--
+
+
+
+    <div class="bgimg-1 m8-hide-small m8-hide-medium"><!--TITLE-->
+
+
+
+<!--
+     </div>
+    <div class="bgimg-2 m8-hide-large m8-hide-small"> <!--TITLE-->
+    <!--
+    <div class="m8-content m8-container" style="margin-top: -40px; margin-bottom: -20px;">
+
+      <h1 class="m8-center m8-text-white font-logo">GENESIS</h1>
+    </div>
+
+    <!--NAVBAR-->
+    <!--
+    <div class="m8-container">
+      <div class="m8-cell-row">
+        <div class="m8-cell m8-center">
+          <span class="font-nav m8-hover-opacity">ABOUT</span>
+        </div>
+        <div class="m8-cell m8-center">
+          <span class="font-nav m8-hover-opacity">ARCHIVE</span>
+        </div>
+        <div class="m8-cell m8-center">
+          <span class="font-nav m8-hover-opacity">CHARACTERS</span>
+        </div>
+        <div class="m8-cell m8-center">
+          <span class="font-nav m8-hover-opacity">FAQ</span>
+        </div>
+        <div class="m8-cell m8-center">
+          <span class="font-nav m8-hover-opacity">CONTACT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="m8-content m8-margin-top m8-center m8-white" style="width: 40%; border-radius: 10px;">
+      <span class="m8-center m8-display-center m8-xxlarge font-headers">UPDATES</span>
+      <hr />
+      <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
+    </div>
+
+    <div class="m8-content m8-margin-top m8-center m8-white" style="width: 40%; border-radius: 10px;">
+      <span class="m8-center m8-display-center m8-xxlarge font-headers">LATEST PAGE</span>
+      <hr />
+      <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
+    </div></div>
+    <div class="bgimg-3 m8-hide-large m8-hide-medium"><!--TITLE-->
+    <!--
+    <div class="m8-content m8-container" style="margin-top: -40px; margin-bottom: -20px;">
+
+      <h1 class="m8-center m8-text-white font-logo">GENESIS</h1>
+    </div>
+
+    <!--NAVBAR-->
+    <!--
+    <div class="m8-container">
+      <div class="m8-cell-row">
+        <div class="m8-cell m8-center">
+          <span class="font-nav m8-hover-opacity">ABOUT</span>
+        </div>
+        <div class="m8-cell m8-center">
+          <span class="font-nav m8-hover-opacity">ARCHIVE</span>
+        </div>
+        <div class="m8-cell m8-center">
+          <span class="font-nav m8-hover-opacity">CHARACTERS</span>
+        </div>
+        <div class="m8-cell m8-center">
+          <span class="font-nav m8-hover-opacity">FAQ</span>
+        </div>
+        <div class="m8-cell m8-center">
+          <span class="font-nav m8-hover-opacity">CONTACT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="m8-content m8-margin-top m8-center m8-white">
+      <span class="m8-center m8-display-center m8-xxlarge font-headers">UPDATES</span>
+      <hr />
+      <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
+    </div>
+
+    <div class="m8-content m8-margin-top m8-center m8-white" style="width: 40%; border-radius: 10px;">
+      <span class="m8-center m8-display-center m8-xxlarge font-headers">LATEST PAGE</span>
+      <hr />
+      <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
+    </div> </div>-->
+    <script>
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("m8-show") == -1) {
+            x.className += " m8-show";
+        } else {
+            x.className = x.className.replace(" m8-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
