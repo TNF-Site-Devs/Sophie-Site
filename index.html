@@ -1,255 +1,81 @@
 <html>
   <head>
-    <title>GENESIS</title>
-    <link rel="stylesheet" href="https://tnf-site-devs.github.io/SurfsUp/assets/css/m8.css" />
-    <link rel="stylesheet" href="assets/css/main-font.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <title>VIRIDIAN</title>
+    <link rel="stylesheet" href="./css/m8.css"/>
+    <link rel="stylesheet" href="./css/main-font.css"/>
+    <link rel="stylesheet" href="./css/font-awesome.min.css"/>
     <style>
       .font-logo {
-        font-family: 'Futura Md BT';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 100px;
-      }
-      .font-headers {
-        font-family: 'Futura Md BT';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 62px;
+      font-family: 'Futura Md BT';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 100px;
       }
       .font-nav {
-        font-family: 'Futura Md BT';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 36px;
-        color: #00c8f8;
-
-      }
-      .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      @media (max-width: 600px) {
-        .bgimg-1 {
-            background-image: url('assets/img/Pattern_BG.jpg');
-            min-height: 100%;
-        }
-      }
-      .bgimg-1 {
-          background-image: url('assets/img/big.png');
-          min-height: 100%;
+      font-family: 'Futura Md BT';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 36px;
+      color: #00c8f8;
       }
       .bgimg-2 {
-          background-image: url('assets/img/BG_med.jpg');
-          min-height: 100%;
-      }
-      .bgimg-3 {
-          background-image: url('assets/img/Pattern_BG.png');
-          min-height: 80%;
-      }
-      .bgimg-4 {
-          background-image: url('assets/img/Pattern_BG.png');
-          min-height: 5%;
+      background-image: url('./img/Pattern_BG.png');
+      min-height: 110%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       }
     </style>
   </head>
-  <!--
-  COLORS:
-
-  #fffff(white has been used a lot for the title) .
-  #465320 - SLUDGE GREEN
-  #00c8f8 - NEON BLUE
-  #d02424 - DARK RED
-  #233633 - DARK GREY/GREEN
-  #242e19 - SHIT COLOR GREEN
-  #323330 - DUSK GREY
-  -->
-  <body style="background-color: #323330;">
-    <!-- BEGINNING OF PARALLAX LOGO -->
-    <div class="m8-display-container" id="home">
-      <div id="navDemo" class="m8-bar-block m8-white m8-hide m8-hide-large">
-        <a href="#about" class="m8-bar-item m8-button" onclick="toggleFunction()">ABOUT</a>
-        <a href="#portfolio" class="m8-bar-item m8-button" onclick="toggleFunction()">PORTFOLIO</a>
-        <a href="#contact" class="m8-bar-item m8-button" onclick="toggleFunction()">CONTACT</a>
-        <a href="#" class="m8-bar-item m8-button">SEARCH</a>
-      </div>
-      <!-- END OF MOBILE MENU -->
-      <!--BEGGING OF LARGE SCREEN -->
-      <div class="bgimg-1 m8-hide-small m8-hide-medium">
-        <div class="m8-content m8-container" style="margin-top: -40px; margin-bottom: -20px;">
-          <h1 class="m8-center m8-text-white font-logo">GENESIS</h1>
-        </div>
-        <!--NAVBAR-->
-        <div class="m8-container">
-          <div class="m8-cell-row">
-            <div class="m8-cell m8-center">
-              <span class="font-nav m8-hover-opacity">ABOUT</span>
-            </div>
-            <div class="m8-cell m8-center">
-              <span class="font-nav m8-hover-opacity">ARCHIVE</span>
-            </div>
-            <div class="m8-cell m8-center">
-              <span class="font-nav m8-hover-opacity">CHARACTERS</span>
-            </div>
-            <div class="m8-cell m8-center">
-              <span class="font-nav m8-hover-opacity">FAQ</span>
-            </div>
-            <div class="m8-cell m8-center">
-              <span class="font-nav m8-hover-opacity">CONTACT</span>
+  <body style="background-color: #000;">
+    <nav id="mySidebar" style="display:none;padding-top:150px" class="m8-sidebar m8-black m8-animate-top m8-xxlarge"><a href="javascript:void(0)" onclick="closeMenu()" style="padding:6px 24px" class="m8-button m8-black m8-jumbo m8-padding m8-display-topright"><i class="fa fa-remove"></i></a>
+      <div class="m8-bar-block m8-center"><a href="/about" class="m8-bar-item m8-button m8-text-grey m8-jumbo m8-hover-black">ABOUT</a><a href="/archive" class="m8-bar-item m8-button m8-text-grey m8-jumbo m8-hover-black">ARCHIVE</a><a href="/characters" class="m8-bar-item m8-button m8-text-grey m8-jumbo m8-hover-black">CHARACTERS</a><a href="/faq" class="m8-bar-item m8-button m8-text-grey m8-jumbo m8-hover-black">FAQ</a><a href="/contact" class="m8-bar-item m8-button m8-text-grey m8-jumbo m8-hover-black">CONTACT</a><a href="/admin" class="m8-bar-item m8-button m8-text-grey m8-jumbo m8-hover-black">ADMIN</a></div>
+    </nav>
+    <div class="bgimg-2">
+      <div style="max-width:1500px" class="m8-content m8-center">
+        <div class="m8-clear">        </div>
+        <header class="m8-center m8-margin-bottom"><a href="/" class="m8-hover-opacity m8-nav-item">
+            <h1 class="font-logo m8-text-white">VIRIDIAN</h1></a><a href="javascript:void(0)" onclick="openMenu()" class="m8-hide-large m8-button m8-black m8-center m8-jumbo"><i class="fa fa-bars"></i></a>
+          <div class="m8-container m8-hide-small m8-hide-medium">
+            <div class="m8-cell-row">
+              <div class="m8-cell m8-center"><a href="/about" class="m8-hover-opacity m8-nav-item"><span class="font-nav m8-hover-opacity">ABOUT</span></a></div>
+              <div class="m8-cell m8-center"><a href="/archive" class="m8-hover-opacity m8-nav-item"><span class="font-nav m8-hover-opacity">ARCHIVE</span></a></div>
+              <div class="m8-cell m8-center"><a href="/characters" class="m8-hover-opacity m8-nav-item"><span class="font-nav m8-hover-opacity">CHARACTERS</span></a></div>
+              <div class="m8-cell m8-center"><a href="/faq" class="m8-hover-opacity m8-nav-item"><span class="font-nav m8-hover-opacity">FAQ</span></a></div>
+              <div class="m8-cell m8-center"><a href="/contact" class="m8-hover-opacity m8-nav-item"><span class="font-nav m8-hover-opacity">CONTACT</span></a></div>
             </div>
           </div>
-        </div>
-        <div class="m8-content m8-margin-top m8-center m8-white" style="width: 40%; border-radius: 10px;">
-          <span class="m8-center m8-display-center m8-xxlarge font-headers">UPDATES</span>
-          <hr />
-          <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
-        </div>
-
-        <div class="m8-content m8-margin-top m8-center m8-white" style="width: 40%; border-radius: 10px;">
-          <span class="m8-center m8-display-center m8-xxlarge font-headers">LATEST PAGE</span>
-          <hr />
-          <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
-        </div>
-      </div>
-
-<!--PHONE SIZE STARTS HERE...-->
-      <div class="bgimg-3 m8-hide-large m8-display-container">
-        <div class="m8-content m8-container" style="margin-top: -40px; margin-bottom: -20px;">
-          <div class="m8-cell-row ">
-            <div class="m8-cell m8-display-topleft">
-              <h1 class="m8-left m8-text-white font-logo">GENESIS</h1>
-            </div>
-            <div class="m8-cell m8-display-topright">
-              <span class="m8-hover-opacity m8-jumbo m8-display-right" style="margin-top: 90px; margin-right: 20px; color: white;" onclick="toggleFunction()"><a><i class="fa fa-bars"></i></a></span>
-            </div>
+          <div class="m8-content m8-hide-large m8-darker-grey m8-center m8-margin-bottom m8-margin-top"><span class="m8-center m8-xxlarge font-headers">LATEST PAGE</span>
+            <hr style="border-top: 1px solid grey;"/><img src="./img/comic/b1pg10.png" style="width: 60%" class="m8-padding-large"/>
           </div>
-
-
-        </div>
-
+          <div class="m8-content m8-hide-large m8-darker-grey m8-center"><span class="m8-center m8-xxlarge font-headers">UPDATES</span>
+            <hr style="border-top: 1px solid grey;"/><img src="./img/comic/b1pg10.png" style="width: 60%" class="m8-padding-large"/>
+          </div>
+        </header>
       </div>
-    </div><!-- BEGINNING OF MOBILE MENU -->
-
-    <!--BEGGING OF CONTENT AFTER Parallax-->
-    <div class="m8-hide-large">
-      <div class="m8-content m8-container m8-white">
-        <div class="m8-container m8-center">
-          <h1 class="font-headers">UPDATES</h1>
-          <hr />
-          <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
+      <div class="m8-row">
+        <div class="m8-col m8-third m8-left m8-container">
+          <div style="border-radius: 15px;" class="m8-content m8-hide-small m8-hide-medium m8-margin-right m8-margin-left m8-margin-top m8-center m8-darker-grey"><span class="m8-center m8-display-top m8-xxlarge font-headers">LATEST</span>
+            <hr style="border-top: 1px solid grey;"/><img src="./img/comic/b1pg10.png" style="width: 100%" class="m8-padding-large"/>
+          </div>
         </div>
-      </div>
-      <div class="bgimg-4"></div>
-      <div class="m8-content m8-container m8-white">
-        <div class="m8-container m8-center">
-          <h1 class="font-headers">LATEST PAGE</h1>
-          <hr />
-          <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
+        <div class="m8-col m8-third m8-right m8-container">
+          <div style="border-radius: 15px;" class="m8-content m8-hide-small m8-hide-medium m8-margin-right m8-margin-left m8-margin-top m8-center m8-darker-grey"><span class="m8-center m8-display-top m8-xxlarge font-headers">LATEST NEWS</span>
+            <hr style="border-top: 1px solid grey;"/><img src="./img/comic/b1pg10.png" style="width: 100%" class="m8-padding-large"/>
+          </div>
         </div>
+        <div class="m8-rest m8-container"><img src="./img/dude.png" style="width: 100%" class="m8-hide-small m8-hide-medium"/></div>
       </div>
     </div>
-
-    <!--
-
-
-
-    <div class="bgimg-1 m8-hide-small m8-hide-medium"><!--TITLE-->
-
-
-
-<!--
-     </div>
-    <div class="bgimg-2 m8-hide-large m8-hide-small"> <!--TITLE-->
-    <!--
-    <div class="m8-content m8-container" style="margin-top: -40px; margin-bottom: -20px;">
-
-      <h1 class="m8-center m8-text-white font-logo">GENESIS</h1>
-    </div>
-
-    <!--NAVBAR-->
-    <!--
-    <div class="m8-container">
-      <div class="m8-cell-row">
-        <div class="m8-cell m8-center">
-          <span class="font-nav m8-hover-opacity">ABOUT</span>
-        </div>
-        <div class="m8-cell m8-center">
-          <span class="font-nav m8-hover-opacity">ARCHIVE</span>
-        </div>
-        <div class="m8-cell m8-center">
-          <span class="font-nav m8-hover-opacity">CHARACTERS</span>
-        </div>
-        <div class="m8-cell m8-center">
-          <span class="font-nav m8-hover-opacity">FAQ</span>
-        </div>
-        <div class="m8-cell m8-center">
-          <span class="font-nav m8-hover-opacity">CONTACT</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="m8-content m8-margin-top m8-center m8-white" style="width: 40%; border-radius: 10px;">
-      <span class="m8-center m8-display-center m8-xxlarge font-headers">UPDATES</span>
-      <hr />
-      <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
-    </div>
-
-    <div class="m8-content m8-margin-top m8-center m8-white" style="width: 40%; border-radius: 10px;">
-      <span class="m8-center m8-display-center m8-xxlarge font-headers">LATEST PAGE</span>
-      <hr />
-      <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
-    </div></div>
-    <div class="bgimg-3 m8-hide-large m8-hide-medium"><!--TITLE-->
-    <!--
-    <div class="m8-content m8-container" style="margin-top: -40px; margin-bottom: -20px;">
-
-      <h1 class="m8-center m8-text-white font-logo">GENESIS</h1>
-    </div>
-
-    <!--NAVBAR-->
-    <!--
-    <div class="m8-container">
-      <div class="m8-cell-row">
-        <div class="m8-cell m8-center">
-          <span class="font-nav m8-hover-opacity">ABOUT</span>
-        </div>
-        <div class="m8-cell m8-center">
-          <span class="font-nav m8-hover-opacity">ARCHIVE</span>
-        </div>
-        <div class="m8-cell m8-center">
-          <span class="font-nav m8-hover-opacity">CHARACTERS</span>
-        </div>
-        <div class="m8-cell m8-center">
-          <span class="font-nav m8-hover-opacity">FAQ</span>
-        </div>
-        <div class="m8-cell m8-center">
-          <span class="font-nav m8-hover-opacity">CONTACT</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="m8-content m8-margin-top m8-center m8-white">
-      <span class="m8-center m8-display-center m8-xxlarge font-headers">UPDATES</span>
-      <hr />
-      <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
-    </div>
-
-    <div class="m8-content m8-margin-top m8-center m8-white" style="width: 40%; border-radius: 10px;">
-      <span class="m8-center m8-display-center m8-xxlarge font-headers">LATEST PAGE</span>
-      <hr />
-      <img src="assets/img/rocks.jpeg" class="m8-padding-large" style="width: 80%" />
-    </div> </div>-->
-    <script>
-      function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("m8-show") == -1) {
-            x.className += " m8-show";
-        } else {
-            x.className = x.className.replace(" m8-show", "");
-        }
-      }
-    </script>
   </body>
+  <script>
+    function openMenu() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+    }
+    function closeMenu() {
+    document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
 </html>
