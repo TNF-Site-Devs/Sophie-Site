@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>GENESIS | Login</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./css/m8.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
+    <link rel="stylesheet" href="./css/font-awesome.min.css"/>
+    <style>
+      html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+      .bg {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('./img/Pattern_BG.png');
+      min-height: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg">
+    <div class="m8-main m8-center">
+      <div class="m8-hide-large m8-white">
+        <div style="text-align: center;" class="m8-container m8-center">
+          <h1 class="m8-margin-top m8-margin-bottom">Welcome</h1><br/>
+          <form action="/admin/login" method="POST">
+            <input placeholder="Username" type="text" name="name" style="border-radius: 46px;" required="" class="m8-input m8-light-grey m8-margin-top m8-margin-bottom"/>
+            <input placeholder="Password" type="password" name="password" style="border-radius: 46px;" required="" class="m8-input m8-light-grey m8-margin-bottom"/>
+            <hr/><br class="m8-margin-bottom m8-margin-top"/>
+            <button style="width: 100%; border-radius: 46px;" class="m8-btn m8-blue m8-text-white">Login</button>
+          </form>
+          <p>or</p>
+          <button style="width: 100%; border-radius: 46px;" class="m8-btn m8-red m8-text-white m8-margin-bottom">Reset</button><a href="/register" style="width: 100%; border-radius: 46px;" class="m8-btn m8-green m8-text-white m8-left m8-margin-bottom">Register</a>
+        </div>
+      </div>
+
+      <div class="m8-row m8-display-middle" style="width: 100%">
+        <div class="m8-col m8-right m8-container" style="width: 25%">
+          <img src="./img/sevencharacter.png" style="width: 100%" class="m8-hide-small m8-hide-medium"/>
+        </div>
+        <div class="m8-col m8-left m8-container" style="width: 25%">
+          <img src="./img/richardsons.png" style="width: 100%" class="m8-hide-medium m8-hide-small"/>
+        </div>
+        <div class="m8-rest m8-container">
+          <div style="width: 100%" class="m8-card-4 m8-hide-small m8-hide-medium m8-white">
+            <div style="text-align: center;" class="m8-container m8-center">
+              <h1>Welcome</h1>
+              <form action="/login" method="POST">
+                <center>
+                  <input placeholder="Username" type="text" name="name" style="width: 80%; border-radius: 46px;" required="" class="m8-input m8-light-grey m8-margin-bottom"/>
+                </center>
+                <center>
+                  <input placeholder="Password" type="password" name="password" style="width: 80%; border-radius: 46px;" required="" class="m8-input m8-light-grey m8-margin-bottom"/>
+                </center>
+                <div class="m8-third">
+                  <button style="width: 70%; border-radius: 46px;" class="m8-btn m8-blue m8-text-white m8-right m8-margin-right m8-margin-bottom">Login</button>
+                </div>
+              </form>
+              <div class="m8-third"><a href="/reset" style="width: 70%; border-radius: 46px;" class="m8-btn m8-red m8-text-white m8-center m8-margin-left m8-margin-right m8-margin-bottom">Reset</a></div>
+              <div class="m8-third"><a href="/register" style="width: 70%; border-radius: 46px;" class="m8-btn m8-green m8-text-white m8-left m8-margin-bottom m8-margin-left">Register</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
